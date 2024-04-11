@@ -1,0 +1,5 @@
+.weather {
+    background: url(https://www.wkbn.com/wp-content/uploads/sites/48/2022/09/heat.jpg?w=2560&h=1440&crop=1) no-repeat fixed center;
+    height: 100vh;
+    z-index: -1;
+}
