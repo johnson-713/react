@@ -38,11 +38,20 @@ function Weather() {
         ) : null}
       </Container>
 
-      <Container className="d-flex mt-5 justify-content-center align-content-center text-center">
+      <Container className="d-flex bg-light bg-opacity-50 w-25 rounded mt-5 justify-content-center align-content-center text-center">
         {data?.name ? (
           <>
-            <h4 className="">{data?.main?.feels_like.toFixed()}&deg; C</h4>
-            <h4 className="ps-5">{data?.main?.humidity.toFixed()} %</h4>
+          <div>
+            <h4 className="ps-5">Feels Like</h4>
+            <h4 className="ps-5">{data?.main?.feels_like.toFixed()}&deg; C</h4>
+          </div>
+
+          <div>
+            <h4 className="ps-5">Humidity</h4>
+          <h4 className="ps-5">{data?.main?.humidity.toFixed()} %</h4>
+          </div>
+            
+          
           </>
         ) : null}
       </Container>

@@ -6,6 +6,7 @@ import About from "./About";
 import NoPage from "./NoPage";
 import { QueryClient, QueryClientProvider } from "react-query";
 import Weather from "./Weather";
+import Register from "./Register";
 
 const queryclient = new QueryClient()
 
@@ -17,9 +18,9 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/contact" element={<Contact />} />
+
           <Route path="/weather" element={<Weather />} />
-          <Route path="/about" element={<About />} />
+          <Route path="/register" element={<Register />} />
           <Route path="*" element={<NoPage />} />
         </Routes>
       </Router>
