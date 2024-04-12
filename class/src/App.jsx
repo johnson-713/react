@@ -1,8 +1,8 @@
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./Home";
-import Contact from "./Contact";
-import About from "./About";
+// import Contact from "./Contact";
+// import About from "./About";
 import NoPage from "./NoPage";
 import { QueryClient, QueryClientProvider } from "react-query";
 import Weather from "./Weather";
@@ -18,7 +18,6 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
-
           <Route path="/weather" element={<Weather />} />
           <Route path="/register" element={<Register />} />
           <Route path="*" element={<NoPage />} />
